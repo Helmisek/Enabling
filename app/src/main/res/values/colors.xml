@@ -5,5 +5,10 @@
     <color name="colorAccent">#FF4081</color>
     <color name="blue_light">#59D2FF</color>
     <color name="inactive_gray">#e4e4e4</color>
-    <color name="white">#fff</color>
+    <color name="white">#ffffff</color>
+    <color name="primaryDarkTwo">#f9f9f9</color>
+    <color name="black">#000</color>
+    <color name="text_gray">#afb1b2</color>
+    <color name="edittext_underline">#e4e4e4</color>
+    <color name="edittext_text">#373d3f</color>
 </resources>

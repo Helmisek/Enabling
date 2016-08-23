@@ -4,14 +4,19 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/primaryDarkTwo</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Edittext tweaks -->
+        <item name="colorControlNormal">@color/edittext_underline</item>
+        <item name="colorControlActivated">@color/edittext_underline</item>
+        <item name="colorControlHighlight">@color/edittext_underline</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
 
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/primaryDarkTwo</item>
         <item name="colorAccent">@color/colorAccent</item>
 
 
