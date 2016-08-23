@@ -122,7 +122,7 @@
                 android:textColor="@color/text_gray"
                 android:textAllCaps="true"/>
 
-            <EditText
+            <android.support.v4.widget.Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"

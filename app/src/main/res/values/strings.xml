@@ -2,4 +2,7 @@
     <string name="app_name">Enable</string>
     <string name="information">Information</string>
     <string name="device">Device</string>
+    <string name="hands">Hands</string>
+    <string name="arms">Arms</string>
+    <string name="fingers">Fingers</string>
 </resources>

@@ -25,8 +25,6 @@ public class ProfileViewPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        // TODO MANAGE VIEWPAGER
-
         if (position == 0) {
             return new ProfileInformationFragment();
         } else {

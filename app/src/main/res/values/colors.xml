@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#59d2ff</color>
+    <color name="colorPrimaryDark">#59D2FF</color>
     <color name="colorAccent">#FF4081</color>
     <color name="blue_light">#59D2FF</color>
     <color name="inactive_gray">#e4e4e4</color>
@@ -11,4 +11,5 @@
     <color name="text_gray">#afb1b2</color>
     <color name="edittext_underline">#e4e4e4</color>
     <color name="edittext_text">#373d3f</color>
+    <color name="actionbar_text">#373d3f</color>
 </resources>
