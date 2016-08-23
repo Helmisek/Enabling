@@ -1,5 +1,10 @@
 package cz.josefkorbel.enable.fragment;
 
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.View;
+
 import cz.josefkorbel.enable.R;
 import cz.josefkorbel.enable.databinding.FragmentMapBinding;
 import cz.josefkorbel.enable.fragment.base.BaseFragment;
@@ -15,4 +20,6 @@ public class MapFragment extends BaseFragment<FragmentMapBinding,MapFragmentView
     public ViewModelBindingConfig<MapFragmentViewModel> getViewModelBindingConfig() {
         return new ViewModelBindingConfig<>(R.layout.fragment_map, MapFragmentViewModel.class);
     }
+
+
 }
