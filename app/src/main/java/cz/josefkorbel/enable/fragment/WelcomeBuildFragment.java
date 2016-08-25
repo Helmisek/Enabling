@@ -18,7 +18,7 @@ public class WelcomeBuildFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_welcome_build, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_welcome_device_selection, container, false);
         return rootView;
     }
 }
