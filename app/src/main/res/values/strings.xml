@@ -5,4 +5,6 @@
     <string name="hands">Hands</string>
     <string name="arms">Arms</string>
     <string name="fingers">Fingers</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="access_token">pk.eyJ1Ijoiam9zZWZrb3JiZWwiLCJhIjoiY2lzOHBlYzRzMDA0MTJvbGptaGMyaHR0YiJ9.tzPMharqdwGRPbPIiT4czw</string>
 </resources>

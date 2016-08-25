@@ -12,4 +12,8 @@
     <color name="edittext_underline">#e4e4e4</color>
     <color name="edittext_text">#373d3f</color>
     <color name="actionbar_text">#373d3f</color>
+    <color name="text_white">#f9f9f9</color>
+    <color name="text_blue">#008fc5</color>
+
+    <color name="gradient_start">#a7e7ff</color>
 </resources>

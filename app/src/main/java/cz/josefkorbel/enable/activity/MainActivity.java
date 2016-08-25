@@ -1,5 +1,7 @@
 package cz.josefkorbel.enable.activity;
 
+import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -13,12 +15,22 @@ import cz.josefkorbel.enable.fragment.DevicesFragment;
 import cz.josefkorbel.enable.fragment.MapFragment;
 import cz.josefkorbel.enable.fragment.ProfileFragment;
 
+import static java.security.AccessController.getContext;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        // Launch Onboarding
+        Intent intent = new Intent(this, WelcomeActivity.class);
+        startActivity(intent);
+
+
+
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {

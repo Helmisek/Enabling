@@ -35,10 +35,7 @@ public class DevicesFragment extends BaseFragment<FragmentDevicesBinding,Devices
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = super.onCreateView(inflater, container, savedInstanceState);
 
-        // Font for actionbar
-        TextView devices = (TextView) rootView.findViewById(R.id.devices_toolbar_text);
-        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Montserrat-Bold.ttf");
-        devices.setTypeface(tf);
+
 
 
         // ViewPager

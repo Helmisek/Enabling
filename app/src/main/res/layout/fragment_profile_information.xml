@@ -26,12 +26,11 @@
             android:layout_weight="2"
             android:orientation="vertical">
 
-            <TextView
+            <cz.josefkorbel.enable.util.MontBoldTextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Email Adress"
-                android:id="@+id/mail"
                 android:textSize="@dimen/information_text_size"
                 android:textColor="@color/text_gray"
                 android:textAllCaps="true"/>
@@ -56,12 +55,11 @@
             android:layout_weight="2"
             android:orientation="vertical">
 
-            <TextView
+            <cz.josefkorbel.enable.util.MontBoldTextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="First Name"
-                android:id="@+id/name"
                 android:textSize="@dimen/information_text_size"
                 android:textColor="@color/text_gray"
                 android:textAllCaps="true"/>
@@ -84,13 +82,12 @@
             android:layout_weight="2"
             android:orientation="vertical">
 
-            <TextView
+            <cz.josefkorbel.enable.util.MontBoldTextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:textSize="@dimen/information_text_size"
                 android:text="City"
-                android:id="@+id/city"
                 android:textColor="@color/text_gray"
                 android:textAllCaps="true"/>
 
@@ -112,13 +109,12 @@
             android:layout_weight="2"
             android:orientation="vertical">
 
-            <TextView
+            <cz.josefkorbel.enable.util.MontBoldTextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:textSize="@dimen/information_text_size"
                 android:layout_weight="1"
                 android:text="Languages"
-                android:id="@+id/lang"
                 android:textColor="@color/text_gray"
                 android:textAllCaps="true"/>
 

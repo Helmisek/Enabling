@@ -26,15 +26,14 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
 
-            <TextView
+            <cz.josefkorbel.enable.util.MontBoldTextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:text="Devices"
                 android:textSize="20sp"
                 android:textColor="@color/actionbar_text"
-                android:gravity="center"
-                android:id="@+id/devices_toolbar_text"/>
+                android:gravity="center"/>
 
             <ImageView
                 android:layout_width="0dp"

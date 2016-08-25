@@ -28,7 +28,8 @@
         android:layout_alignParentBottom="true"
         app:bb_tabXmlResource="@xml/bottombar_tabs"
         app:bb_inActiveTabColor="@color/inactive_gray"
-        app:bb_activeTabColor="@color/blue_light"/>
+        app:bb_activeTabColor="@color/blue_light"
+        app:bb_titleTypeFace="fonts/Montserrat-Regular.ttf"/>
 
 </RelativeLayout>
 </layout>

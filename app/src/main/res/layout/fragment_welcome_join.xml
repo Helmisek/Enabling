@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_margin="32dp"
+        android:src="@drawable/join_community_image"/>
+    
+    <cz.josefkorbel.enable.util.MontBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Join Community"
+        android:textSize="32sp"
+        android:textColor="@color/text_white"
+        android:gravity="center"/>
+
+    <cz.josefkorbel.enable.util.MontRegTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Volunteers providing 3D-printed prosthetic devices and people who need them."
+        />
+
+
+</LinearLayout>

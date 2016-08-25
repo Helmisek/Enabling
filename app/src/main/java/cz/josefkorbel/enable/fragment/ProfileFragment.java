@@ -35,11 +35,6 @@ public class ProfileFragment extends BaseFragment<FragmentProfileBinding,Profile
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = super.onCreateView(inflater, container, savedInstanceState);
 
-        TextView toolbar_name = (TextView) rootView.findViewById(R.id.profile_toolbar_name);
-        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Montserrat-Bold.ttf");
-        toolbar_name.setTypeface(tf);
-
-
         // ViewPager
         //Declaring All The Variables Needed
         final TabLayout tabLayout;

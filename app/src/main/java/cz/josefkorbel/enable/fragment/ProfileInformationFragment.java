@@ -34,18 +34,11 @@ public class ProfileInformationFragment extends BaseFragment<FragmentProfileInfo
         View rootView = super.onCreateView(inflater, container, savedInstanceState);
 
         // Custom font bullshit
-        TextView mail = (TextView) rootView.findViewById(R.id.mail);
-        TextView name = (TextView) rootView.findViewById(R.id.name);
-        TextView city = (TextView) rootView.findViewById(R.id.city);
-        TextView lang = (TextView) rootView.findViewById(R.id.lang);
+
         EditText et1 = (EditText) rootView.findViewById(R.id.et1);
         EditText et2 = (EditText) rootView.findViewById(R.id.et2);
         EditText et3 = (EditText) rootView.findViewById(R.id.et3);
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Montserrat-Bold.ttf");
-        mail.setTypeface(tf);
-        name.setTypeface(tf);
-        city.setTypeface(tf);
-        lang.setTypeface(tf);
         et1.setTypeface(tf);
         et2.setTypeface(tf);
         et3.setTypeface(tf);
