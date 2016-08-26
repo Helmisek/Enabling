@@ -34,7 +34,6 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
 
         // ViewPager
         //Declaring All The Variables Needed
-        final TabLayout tabLayout;
         final ViewPager viewPager;
         WelcomeViewPagerAdapter viewPagerAdapter;
 

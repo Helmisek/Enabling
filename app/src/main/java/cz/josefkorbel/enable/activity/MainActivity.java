@@ -24,13 +24,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         // Launch Onboarding
         Intent intent = new Intent(this, WelcomeActivity.class);
         startActivity(intent);
-
-
-
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
@@ -49,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
 
     }
 
