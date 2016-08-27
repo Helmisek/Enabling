@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 
 import cz.josefkorbel.enable.R;
+import cz.josefkorbel.enable.fragment.RecipientChooseDeviceFragment;
 
 /**
  * Created by Jsf on 25. 8. 2016.
@@ -13,17 +14,21 @@ import cz.josefkorbel.enable.R;
 
 public class RecipientChoosingActivity extends AppCompatActivity {
 
+    final int container_id = R.id.recipient_choose_container;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipient_choose);
+
+        commitFragment(new RecipientChooseDeviceFragment());
 
 
 
 
     }
 
-    private void commitFragment(Fragment fragment){
+    public void commitFragment(Fragment fragment){
         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.recipient_choose_container, fragment);
         fragmentTransaction.commit();

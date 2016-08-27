@@ -106,6 +106,7 @@
                         android:textSize="14sp"
                         android:textColor="@color/colorPrimary"
                         android:gravity="center"
+                        android:id="@+id/hand_button"
                         android:text="Select"/>
 
                 </LinearLayout>
@@ -201,6 +202,7 @@
                         android:textSize="14sp"
                         android:textColor="@color/colorPrimary"
                         android:gravity="center"
+                        android:id="@+id/arm_button"
                         android:text="Select"/>
 
                 </LinearLayout>
@@ -295,6 +297,7 @@
                         android:textSize="14sp"
                         android:textColor="@color/colorPrimary"
                         android:gravity="center"
+                        android:id="@+id/finger_button"
                         android:text="Select"/>
 
                 </LinearLayout>

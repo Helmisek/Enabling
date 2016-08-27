@@ -3,6 +3,7 @@ package cz.josefkorbel.enable.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,7 @@ import me.relex.circleindicator.CircleIndicator;
 public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, WelcomeActivityViewModel> {
 
 
+
     @Override
     public ViewModelBindingConfig<WelcomeActivityViewModel> getViewModelBindingConfig() {
         return new ViewModelBindingConfig<>(R.layout.activity_welcome,WelcomeActivityViewModel.class);
@@ -32,8 +34,9 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+
         // ViewPager
-        //Declaring All The Variables Needed
         final ViewPager viewPager;
         WelcomeViewPagerAdapter viewPagerAdapter;
 
@@ -47,18 +50,8 @@ public class WelcomeActivity extends BaseActivity<ActivityWelcomeBinding, Welcom
         viewPagerAdapter = new WelcomeViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(viewPagerAdapter);
         indicator.setViewPager(viewPager);
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
+
+
 }

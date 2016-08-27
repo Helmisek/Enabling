@@ -24,6 +24,9 @@
         <activity android:name=".activity.WelcomeActivity"
                     android:theme="@style/AppThemeWelcome"/>
 
+        <activity android:name=".activity.RecipientChoosingActivity"
+                    android:theme="@style/AppThemeWelcome"/>
+
 
 
     </application>
