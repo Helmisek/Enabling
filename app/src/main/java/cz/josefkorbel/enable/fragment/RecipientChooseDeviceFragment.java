@@ -13,6 +13,7 @@ import java.lang.reflect.Field;
 
 import cz.josefkorbel.enable.R;
 import cz.josefkorbel.enable.activity.RecipientChoosingActivity;
+import cz.josefkorbel.enable.util.RecipientChooseListener;
 
 /**
  * Created by Jsf on 27. 8. 2016.
@@ -20,7 +21,7 @@ import cz.josefkorbel.enable.activity.RecipientChoosingActivity;
 
 
 // TODO BUG #1 tahle classa pujde asi cela predelat
-public class RecipientChooseDeviceFragment extends Fragment implements View.OnClickListener {
+public class RecipientChooseDeviceFragment extends Fragment{
 
     private String deviceTypeSelected;
 
@@ -33,32 +34,30 @@ public class RecipientChooseDeviceFragment extends Fragment implements View.OnCl
         TextView button_arm     = (TextView) rootView.findViewById(R.id.arm_button);
         TextView button_finger  = (TextView) rootView.findViewById(R.id.finger_button);
 
-        button_hand.setOnClickListener(this);
-        button_arm.setOnClickListener(this);
-        button_finger.setOnClickListener(this);
+        button_hand.setOnClickListener(new RecipientChooseListener());
+        button_arm.setOnClickListener(new RecipientChooseListener());
+
+
+        
 
         return rootView;
     }
 
 
-    /// Tady to pada na tom commitu 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.hand_button:
-                deviceTypeSelected = "hand";
-                new RecipientChoosingActivity().commitFragment(new RecipientChooseSideFragment());
-                break;
-            case R.id.arm_button:
-                deviceTypeSelected = "arm";
-                new RecipientChoosingActivity().commitFragment(new RecipientChooseSideFragment());
-                break;
-            case R.id.finger_button:
-                deviceTypeSelected = "finger";
-                new RecipientChoosingActivity().commitFragment(new RecipientChooseSideFragment());
-                break;
-        }
 
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        try {
+            Field childFragmentManager = Fragment.class.getDeclaredField("mChildFragmentManager");
+            childFragmentManager.setAccessible(true);
+            childFragmentManager.set(this, null);
+        } catch (NoSuchFieldException e) {
+            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 
