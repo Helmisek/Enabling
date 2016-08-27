@@ -38,7 +38,7 @@ public class RecipientChooseDeviceFragment extends Fragment{
         button_arm.setOnClickListener(new RecipientChooseListener());
 
 
-        
+
 
         return rootView;
     }
